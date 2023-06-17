@@ -1,8 +1,12 @@
 import React, { useRef } from "react";
-import { HiOutlineMenu } from "react-icons/hi";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import {
+  AiOutlineGithub,
+  AiFillLinkedin,
+  AiFillInstagram,
+  AiOutlineCloseCircle,
+} from "react-icons/ai";
+import { BiMenu } from "react-icons/bi";
 import Sidebar from "../Sidebar/Sidebar";
-import NavList from "../NavList/NavList";
 
 const Navbar = () => {
   const toogalSid = () => {
@@ -16,31 +20,45 @@ const Navbar = () => {
   };
   const ref = useRef();
   return (
-    <>
-      <div className="Navbar h-16 flex w-full shadow-md shadow-gray-400 ">
-        <div className="font-serif rotateY cursor-pointer border-2 mx-8 drop-shadow-lg border-solid text-shadow-2 rounded-full h-16 w-16 text-center ">
-          <span className="text-5xl  text-center">A</span>
+    <div className="h-16 w-full shadow-md flex items-center justify-between">
+      <div className="logo h-16 w-16 mx-8 border-2 border-black drop-shadow-lg rounded-full p-1 text-center">
+        <span className="text-5xl font-serif ">A</span>
+      </div>
+      <div className="hidden md:block">
+        <div className="flex gap-8 mx-12 items-center font-serif font-semibold text-sm ">
+          <div className="cursor-pointer hover:text-slate-300 ">Home</div>
+          <div className="cursor-pointer hover:text-slate-300 ">Skills</div>
+          <div className="cursor-pointer hover:text-slate-300 ">Projects</div>
+          <div className="flex text-2xl gap-3 text-slate-500">
+            <AiFillLinkedin />
+            <AiOutlineGithub />
+            <AiFillInstagram />
+          </div>
+          <div className="border hover:border-stone-300 border-black px-4 py-1 cursor-pointer hover:text-slate-300 ">
+            Let's Connect
+          </div>
         </div>
-        <div className="hidden md:block absolute right-2">
-          <NavList />
-        </div>
-        <HiOutlineMenu
-          onClick={toogalSid}
-          className="absolute text-lg top-6 right-6 md:hidden"
-        />
+      </div>
+      <div className="flex text-2xl md:hidden absolute left-32 sm:fixed  gap-3 text-slate-500">
+        <AiFillLinkedin className="hover:text-black" />
+        <AiOutlineGithub className="hover:text-black" />
+        <AiFillInstagram className="hover:text-black" />
+      </div>
+      <div className="block mx-16 md:hidden">
+        <BiMenu onClick={toogalSid} className="text-2xl hover:text-slate-400" />
         <div
           ref={ref}
-          className="absolute md:hidden hidden top-0 right-0 h-full w-2/4 bg-white shadow-2xl"
+          className="absolute md:hidden hidden top-20 right-0 h-12 w-full transform transition-transform bg-white shadow-xl"
         >
-          <div className=" h-full">
+          <div>
             <Sidebar />
           </div>
           <span onClick={toogalSid}>
-            <AiOutlineCloseCircle className="absolute text-lg top-6 right-6" />
+            <AiOutlineCloseCircle className="absolute text-2xl hover:text-slate-400 top-2 right-6" />
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
