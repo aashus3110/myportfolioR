@@ -14,3 +14,4 @@
 `npm i lottie-react`
 `npm i typewriter-effect`
 `npm i swiper`
+`npm i react-intersection-observer`
