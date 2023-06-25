@@ -27,7 +27,7 @@ const Skills = () => {
           <div className="flex flex-col items-center py-8">
             <span>Web Development </span>
             <img className="h-20 w-40 " src={Webdev} alt="" />
-            <Progres value={75} text={"75%"} />
+            <Progres value={85} text={"85%"} />
           </div>
         </div>
         <div className="h-12 w-20 lg:w-0 border-b-2 lg:border-r-2 border-violet-300"></div>
@@ -35,7 +35,7 @@ const Skills = () => {
           <div className="flex flex-col items-center py-8">
             <span>Web Development </span>
             <img className="h-20 w-40 " src={Webdev} alt="" />
-            <Progres value={75} text={"75%"} />
+            <Progres value={95} text={"95%"} />
           </div>
         </div>
         <div className="h-12 w-20 lg:w-0 border-b-2 lg:border-r-2 border-violet-300"></div>
@@ -43,7 +43,7 @@ const Skills = () => {
           <div className="flex flex-col items-center py-8">
             <span>Web Development </span>
             <img className="h-20 w-40 " src={Webdev} alt="" />
-            <Progres value={75} text={"75%"} />
+            <Progres value={85} text={"85%"} />
           </div>
         </div>
       </div>
