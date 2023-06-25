@@ -20,43 +20,60 @@ const Navbar = () => {
   };
   const ref = useRef();
   return (
-    <div className="h-16 w-full shadow-md flex items-center justify-between">
-      <div className="logo h-16 w-16 mx-8 border-2 border-black drop-shadow-lg rounded-full p-1 text-center">
-        <span className="text-5xl font-serif ">A</span>
+    <div className="w-full h-20 fixed flex justify-between items-center gap-8 text-white font-semibold bg-violet-950 shadow-sm shadow-white ">
+      <div className="cursor-pointer mx-2 md:mx-8 hover:text-slate-300 text-2xl">
+        Aashutosh
       </div>
-      <div className="hidden md:block">
-        <div className="flex gap-8 mx-12 items-center font-serif font-semibold text-sm ">
-          <div className="cursor-pointer hover:text-slate-300 ">Home</div>
-          <div className="cursor-pointer hover:text-slate-300 ">Skills</div>
-          <div className="cursor-pointer hover:text-slate-300 ">Projects</div>
-          <div className="flex text-2xl gap-3 text-slate-500">
-            <AiFillLinkedin />
-            <AiOutlineGithub />
-            <AiFillInstagram />
+      <div className="flex gap-4 md:hidden sm:mx-32 mr-32 ">
+        <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+          <AiOutlineGithub className="text-xl hover:text-slate-500" />
+        </span>
+        <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+          <AiFillLinkedin className="text-xl hover:text-slate-500" />
+        </span>
+        <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+          <AiFillInstagram className="text-xl hover:text-slate-500" />
+        </span>
+      </div>
+      <div className="md:block hidden">
+        <div className=" flex gap-8 items-center lg:mx-12 mx-2 ">
+          <div className="flex gap-8 text-sm ">
+            <div className="cursor-pointer hover:text-slate-300 ">Home</div>
+            <div className="cursor-pointer hover:text-slate-300 ">Skills</div>
+            <div className="cursor-pointer hover:text-slate-300 ">Projects</div>
           </div>
-          <div className="border hover:border-stone-300 border-black px-4 py-1 cursor-pointer hover:text-slate-300 ">
-            Let's Connect
+          <div className="flex gap-8  ">
+            <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+              <AiOutlineGithub className="text-xl hover:text-slate-500" />
+            </span>
+            <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+              <AiFillLinkedin className="text-xl hover:text-slate-500" />
+            </span>
+            <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+              <AiFillInstagram className="text-xl hover:text-slate-500" />
+            </span>
+          </div>
+          <div className="flex gap-8  ">
+            <span className="border-[1px] border-white p-2 hover:border-slate-300 cursor-pointer hover:text-slate-300 text-sm">
+              Let's Connect
+            </span>
           </div>
         </div>
       </div>
-      <div className="flex text-2xl md:hidden absolute left-32 sm:fixed  gap-3 text-slate-500">
-        <AiFillLinkedin className="hover:text-black" />
-        <AiOutlineGithub className="hover:text-black" />
-        <AiFillInstagram className="hover:text-black" />
-      </div>
-      <div className="block mx-16 md:hidden">
-        <BiMenu onClick={toogalSid} className="text-2xl hover:text-slate-400" />
-        <div
-          ref={ref}
-          className="absolute md:hidden hidden top-20 right-0 h-12 w-full transform transition-transform bg-white shadow-xl"
-        >
-          <div>
-            <Sidebar />
-          </div>
-          <span onClick={toogalSid}>
-            <AiOutlineCloseCircle className="absolute text-2xl hover:text-slate-400 top-2 right-6" />
-          </span>
+      <BiMenu
+        onClick={toogalSid}
+        className="absolute top-6 right-4 md:hidden text-white text-2xl"
+      />
+      <div
+        ref={ref}
+        className="absolute md:hidden hidden top-0 right-0 h-full w-screen bg-violet-950 shadow-2xl"
+      >
+        <div className=" h-full">
+          <Sidebar />
         </div>
+        <span onClick={toogalSid}>
+          <AiOutlineCloseCircle className="absolute text-2xl  top-6 right-6" />
+        </span>
       </div>
     </div>
   );
