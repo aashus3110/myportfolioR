@@ -11,7 +11,7 @@ import Project1 from "../../img/Project1.png";
 
 const Project = () => {
   return (
-    <div className="bg-violet-900 min-h-screen py-12 px-8">
+    <div className="bg-violet-900 min-h-[84vh] pt-12 px-8">
       <div className="flex flex-col items-baseline py-8">
         <span className="text-base py-2 mx-4 text-violet-400 font-semibold">
           A Set of Particular Projects I do :-
@@ -88,7 +88,7 @@ const Project = () => {
           <AiOutlineCaretRight className="swiper-button-next !flex" />
         </div>
       </Swiper>
-      <hr className="border-violet-400 w-full my-8 md:m-1 border-2 rounded-md" />
+      <hr className="border-violet-400 w-full my-8 md:m-0 border-2 rounded-md" />
     </div>
   );
 };

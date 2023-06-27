@@ -7,7 +7,7 @@ import Progres from "../Progress/Progres";
 
 const Skills = () => {
   return (
-    <div className="md:h-full py-12 px-8 h-full w-full bg-violet-900 text-white">
+    <div className="md:h-full pt-12 px-8 h-full w-full bg-violet-900 text-white">
       <div className="flex flex-col items-baseline py-8">
         <span className="text-base py-2 mx-4 text-violet-400 font-semibold">
           A Set of Particular Skills I know :-
@@ -50,7 +50,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <hr className="border-violet-400 w-full my-8 md:m-1 border-2 rounded-md" />
+      <hr className="border-violet-400 w-full mt-12 md:m-0 border-2 rounded-md" />
     </div>
   );
 };

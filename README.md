@@ -15,3 +15,4 @@
 `npm i typewriter-effect`
 `npm i swiper`
 `npm i react-intersection-observer`
+`npm i @emailjs/browser`
