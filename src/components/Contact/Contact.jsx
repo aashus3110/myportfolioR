@@ -48,7 +48,7 @@ const Contact = () => {
           Get in Touch
         </span>
         {isSubmitted && (
-          <span className="mb-20 p-2 border-green-300 border-2 rounded-xl text-green-600 bg-green-200">
+          <span className="mb-20 p-2 border-green-300 border-2 text-xl rounded-xl text-green-600 bg-green-200">
             Thanks for contacting me!
           </span>
         )}
