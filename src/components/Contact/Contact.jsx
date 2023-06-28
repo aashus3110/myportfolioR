@@ -77,7 +77,7 @@ const Contact = () => {
         <input
           type="submit"
           value="Send"
-          className="bg-violet-400 mb-8 text-violet-300 py-1 px-12 rounded-md cursor-pointer hover:text-violet-950"
+          className="px-10 py-1 mx-1 text-violet-300 border-violet-300 border-2 rounded-md hover:text-violet-950 hover:border-violet-950 hover:shadow-xl shadow-violet-300 bg-violet-400 mb-8"
         />
       </form>
       <hr className="border-violet-400 w-full my-8 md:m-1 border-2 rounded-md" />

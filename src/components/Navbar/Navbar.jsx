@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-scroll";
 import {
   AiOutlineGithub,
   AiFillLinkedin,
@@ -25,38 +26,100 @@ const Navbar = () => {
         Aashutosh
       </div>
       <div className="flex gap-4 md:hidden sm:mx-32 mr-32 ">
-        <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+        <a
+          href="https://github.com/aashus3110"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border-[1px] border-white rounded-full p-2 hover:border-slate-300"
+        >
           <AiOutlineGithub className="text-xl hover:text-slate-500" />
-        </span>
-        <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/aashu3110/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border-[1px] border-white rounded-full p-2 hover:border-slate-300"
+        >
           <AiFillLinkedin className="text-xl hover:text-slate-500" />
-        </span>
-        <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+        </a>
+
+        <a
+          href="https://www.instagram.com/_im_aashu_3110_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border-[1px] border-white rounded-full p-2 hover:border-slate-300"
+        >
           <AiFillInstagram className="text-xl hover:text-slate-500" />
-        </span>
+        </a>
       </div>
       <div className="md:block hidden">
         <div className=" flex gap-8 items-center lg:mx-12 mx-2 ">
           <div className="flex gap-8 text-sm ">
-            <div className="cursor-pointer hover:text-slate-300 ">Home</div>
-            <div className="cursor-pointer hover:text-slate-300 ">Skills</div>
-            <div className="cursor-pointer hover:text-slate-300 ">Projects</div>
+            <Link
+              className="cursor-pointer hover:text-slate-300 "
+              activeClass="activeClass"
+              to="intro"
+              spy={true}
+              smooth={true}
+            >
+              Home
+            </Link>
+            <Link
+              className="cursor-pointer hover:text-slate-300 "
+              activeClass="activeClass"
+              to="skills"
+              spy={true}
+              smooth={true}
+            >
+              Skills
+            </Link>
+            <Link
+              className="cursor-pointer hover:text-slate-300 "
+              activeClass="activeClass"
+              to="projects"
+              spy={true}
+              smooth={true}
+            >
+              Projects
+            </Link>
           </div>
           <div className="flex gap-8  ">
-            <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+            <a
+              href="https://github.com/aashus3110"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1px] border-white rounded-full p-2 hover:border-slate-300"
+            >
               <AiOutlineGithub className="text-xl hover:text-slate-500" />
-            </span>
-            <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aashu3110/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1px] border-white rounded-full p-2 hover:border-slate-300"
+            >
               <AiFillLinkedin className="text-xl hover:text-slate-500" />
-            </span>
-            <span className="border-[1px] border-white rounded-full p-2 hover:border-slate-300">
+            </a>
+
+            <a
+              href="https://www.instagram.com/_im_aashu_3110_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-[1px] border-white rounded-full p-2 hover:border-slate-300"
+            >
               <AiFillInstagram className="text-xl hover:text-slate-500" />
-            </span>
+            </a>
           </div>
           <div className="flex gap-8  ">
-            <span className="border-[1px] border-white p-2 hover:border-slate-300 cursor-pointer hover:text-slate-300 text-sm">
+            <Link
+              className="border-[1px] border-white p-2 hover:border-slate-300 cursor-pointer hover:text-slate-300 text-sm"
+              activeClass="activeClass"
+              to="contact"
+              spy={true}
+              smooth={true}
+            >
               Let's Connect
-            </span>
+            </Link>
           </div>
         </div>
       </div>

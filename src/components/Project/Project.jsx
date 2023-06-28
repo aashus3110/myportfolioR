@@ -11,7 +11,7 @@ import Project1 from "../../img/Project1.png";
 
 const Project = () => {
   return (
-    <div className="bg-violet-900 min-h-[84vh] pt-12 px-8">
+    <div className="projects bg-violet-900 min-h-[84vh] pt-12 px-8">
       <div className="flex flex-col items-baseline py-8">
         <span className="text-base py-2 mx-4 text-violet-400 font-semibold">
           A Set of Particular Projects I do :-
