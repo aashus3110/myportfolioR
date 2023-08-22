@@ -1,19 +1,14 @@
-# This is react web app and using command `npx create react app we use react template`
 
-# You use this code for use then enter comaned
+# MyPortfolio
+    this is the website to showcase the my skill and experience
 
-`npm i`
-`#To install all recorses`
 
-# Extra Installation
+## Project Link:-
+     
+    https://aashus3110.github.io/myportfolio/
+    
+this project host by github pages so click on link to see the live site
+## How to use this project in other systems
 
-`React JS Tailwind CSS`
-`npm install -D tailwindcss`
-`npx tailwindcss init`
-`npm install react-icons --save`
-`npm i lottie-react`
-`npm i typewriter-effect`
-`npm i swiper`
-`npm i react-intersection-observer`
-`npm i @emailjs/browser`
-`npm i react-scroll`
+    run the command "npm i" 
+To install all resources
